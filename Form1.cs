@@ -63,9 +63,9 @@ namespace EpicCreativeGameName
 
         int TrueCoordsX, TrueCoordsY;
 
-        SoundPlayer BackGroundMusicCalm = new SoundPlayer("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Sound_and_Music/Superboy.wav");
-        SoundPlayer BackGroundMusicIntens = new SoundPlayer("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Sound_and_Music/Fiberitron Loop.wav");
-        SoundPlayer GameOverEffect = new SoundPlayer("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Sound_and_Music/gameover.wav");
+        SoundPlayer BackGroundMusicCalm = new SoundPlayer("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Sound_and_Music/Superboy.wav");
+        SoundPlayer BackGroundMusicIntens = new SoundPlayer("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Sound_and_Music/Fiberitron Loop.wav");
+        SoundPlayer GameOverEffect = new SoundPlayer("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Sound_and_Music/gameover.wav");
 
         public static int OriginalScore;
         public static bool menu;
@@ -111,7 +111,7 @@ namespace EpicCreativeGameName
                    
                 if (x is PictureBox && (string)x.Tag == "Coin")
                 {
-                    x.BackgroundImage = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/Coin.png");
+                    x.BackgroundImage = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/Coin.png");
                 }
             }
 
@@ -177,19 +177,19 @@ namespace EpicCreativeGameName
                 switch (sign(hsp))
                 {
                     case 1:
-                        Player.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerRunRightSprite.png");
+                        Player.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerRunRightSprite.png");
                         break;
                     case -1:
-                        Player.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerRunLeftSprite.png");
+                        Player.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerRunLeftSprite.png");
                         break;
                     default:
-                        Player.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerIdleSprite.png");
+                        Player.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerIdleSprite.png");
                         break;
                 }
             } 
             else
             {
-                Player.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerIdleSprite.png");
+                Player.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerIdleSprite.png");
             }
 
             //walljump
@@ -407,13 +407,13 @@ namespace EpicCreativeGameName
             switch (health)
             {
                 case 3:
-                    HealthBar.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/health_3-3.png");
+                    HealthBar.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/health_3-3.png");
                     break;
                 case 2:
-                    HealthBar.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/health_2-3.png");
+                    HealthBar.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/health_2-3.png");
                     break;
                 case 1:
-                    HealthBar.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/health_1-3.png");
+                    HealthBar.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/health_1-3.png");
                     break;
                 case 0:
                     HealthBar.Image = null;
@@ -426,7 +426,7 @@ namespace EpicCreativeGameName
             {
                 EnemyLoad = false;
                 Enemy.Visible = false;
-                DemonCage.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/CageClosingSprite.png");
+                DemonCage.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/CageClosingSprite.png");
                 HasKey = true;
                 BackGroundMusicIntens.Stop();
                 BackGroundMusicCalm.PlayLooping();
@@ -489,7 +489,7 @@ namespace EpicCreativeGameName
                 HellFence.Top += 1;
                 if ((HellFence.Height == 0) && (!EnemyCutsceneTimer))
                 {
-                    Enemy.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/DemonRunLeftSprite.png");
+                    Enemy.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/DemonRunLeftSprite.png");
                     EnemyCutsceneTimer = true;
                 }
             }
@@ -693,13 +693,13 @@ namespace EpicCreativeGameName
                 switch (sign(EnemyHsp))
                 {
                     case 1:
-                        Enemy.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/DemonRunRightSprite.png");
+                        Enemy.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/DemonRunRightSprite.png");
                         break;
                     case -1:
-                        Enemy.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/DemonRunLeftSprite.png");
+                        Enemy.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/DemonRunLeftSprite.png");
                         break;
                     default:
-                        Enemy.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/DemonIdleSprite.png");
+                        Enemy.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/DemonIdleSprite.png");
                         break;
                 }
             }
@@ -729,20 +729,20 @@ namespace EpicCreativeGameName
             TreeGate.Visible = true;
             HellFence.Visible = true;
 
-            Enemy.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/DemonIdleSprite.png");
-            Player.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerIdleSprite.png");
-            DemonCage.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/CageOpenSprite.png");
-            TreeGate.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/treebranche.png");
-            HellFence.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/DemonGate.png");
-            HellFenceSwitch.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/hellswitch.png");
+            Enemy.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/DemonIdleSprite.png");
+            Player.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerIdleSprite.png");
+            DemonCage.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/CageOpenSprite.png");
+            TreeGate.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/treebranche.png");
+            HellFence.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/DemonGate.png");
+            HellFenceSwitch.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/hellswitch.png");
 
 
-            CustomBackground.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/BackgroundSprite.png");
+            CustomBackground.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/BackgroundSprite.png");
         }
 
         public void Die()
         {
-            Player.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerDeadSprite.png");
+            Player.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerDeadSprite.png");
             GameOverEffect.Play();
             GameTimer.Stop();
             MessageBox.Show("you died");

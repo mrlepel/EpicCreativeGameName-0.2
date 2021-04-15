@@ -19,8 +19,8 @@ namespace EpicCreativeGameName_0._2
         string CurrentlySelected;
         bool Trigger = true;
 
-        SoundPlayer MenuMusic = new SoundPlayer("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Sound_and_Music/Patakas World.wav");
-        SoundPlayer helpSong = new SoundPlayer("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Sound_and_Music/help.wav");
+        SoundPlayer MenuMusic = new SoundPlayer("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Sound_and_Music/Patakas World.wav");
+        SoundPlayer helpSong = new SoundPlayer("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Sound_and_Music/help.wav");
 
         public mainMenu()
         {
@@ -64,7 +64,7 @@ namespace EpicCreativeGameName_0._2
                         this.Hide();
                         break;
                     case "help":
-                        pictureBox1.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/rick-astley.png");
+                        pictureBox1.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/rick-astley.png");
                         helpSong.Play();
                         break;
                     case "quit":

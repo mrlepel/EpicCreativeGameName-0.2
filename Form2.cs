@@ -39,8 +39,8 @@ namespace EpicCreativeGameName_0._2
 
         int ScorePoints;
 
-        SoundPlayer BackGroundMusicCalm = new SoundPlayer("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Sound_and_Music/African Safari Loop.wav");
-        SoundPlayer GameOverEffect = new SoundPlayer("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Sound_and_Music/gameover.wav");
+        SoundPlayer BackGroundMusicCalm = new SoundPlayer("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Sound_and_Music/African Safari Loop.wav");
+        SoundPlayer GameOverEffect = new SoundPlayer("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Sound_and_Music/gameover.wav");
 
 
         public Form2()
@@ -60,7 +60,7 @@ namespace EpicCreativeGameName_0._2
 
                 if (x is PictureBox && (string)x.Tag == "Coin")
                 {
-                    x.BackgroundImage = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/Coin.png");
+                    x.BackgroundImage = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/Coin.png");
                 }
             }
 
@@ -119,19 +119,19 @@ namespace EpicCreativeGameName_0._2
                 switch (sign(hsp))
                 {
                     case 1:
-                        Player.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerRunRightSprite.png");
+                        Player.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerRunRightSprite.png");
                         break;
                     case -1:
-                        Player.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerRunLeftSprite.png");
+                        Player.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerRunLeftSprite.png");
                         break;
                     default:
-                        Player.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerIdleSprite.png");
+                        Player.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerIdleSprite.png");
                         break;
                 }
             }
             else
             {
-                Player.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerIdleSprite.png");
+                Player.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerIdleSprite.png");
             }
 
             //walljump
@@ -276,13 +276,13 @@ namespace EpicCreativeGameName_0._2
             switch (health)
             {
                 case 3:
-                    HealthBar.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/health_3-3.png");
+                    HealthBar.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/health_3-3.png");
                     break;
                 case 2:
-                    HealthBar.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/health_2-3.png");
+                    HealthBar.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/health_2-3.png");
                     break;
                 case 1:
-                    HealthBar.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/health_1-3.png");
+                    HealthBar.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/health_1-3.png");
                     break;
                 case 0:
                     HealthBar.Image = null;
@@ -429,8 +429,8 @@ namespace EpicCreativeGameName_0._2
 
         public void SpriteDrawing()
         {
-            Player.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerIdleSprite.png");
-            CustomBackground.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/ForestBackground.png");
+            Player.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerIdleSprite.png");
+            CustomBackground.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/ForestBackground.png");
         }
 
         private void RestartGame()
@@ -444,7 +444,7 @@ namespace EpicCreativeGameName_0._2
 
         public void Die()
         {
-            Player.Image = Image.FromFile("C:\\Users/Riemer/Documents/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerDeadSprite.png");
+            Player.Image = Image.FromFile("C:\\Program Files/EpicCreativeGameName-0.2/Resources/Epic_Creative_Game_Name_Sprites/PlayerDeadSprite.png");
             GameOverEffect.Play();
             MainGaimTimer.Stop();
             MessageBox.Show("you died");
